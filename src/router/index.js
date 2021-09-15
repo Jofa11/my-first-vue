@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home'
 import About from '../views/About'
+import Feature from '../views/Feature'
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
 		name: 'about',
 		component: About,
 	},
+    {
+        path: '/feature',
+        name: 'feature',
+        component: Feature,
+    }
 ];
 
 const router = new VueRouter({
